@@ -1,5 +1,5 @@
 ﻿using System.Threading.Channels;
-
+//the program
 namespace To_do_List_Application
 {
     internal class Program
@@ -28,11 +28,11 @@ namespace To_do_List_Application
                     tasksList.Add(task);
                     Console.WriteLine("Task added succesfully");
                 }
-                else if (option == "2") 
+                else if (option == "2")
                 {
-                    for (int i = 0; i < tasksList.Count; i++) 
+                    for (int i = 0; i < tasksList.Count; i++)
                     {
-                        Console.WriteLine($"{i+1} : {tasksList[i]}" );
+                        Console.WriteLine($"{i + 1} : {tasksList[i]}");
                     }
                     Console.WriteLine("Enter the task number to remove");
                     int taskNum = Convert.ToInt32(Console.ReadLine());
@@ -41,18 +41,18 @@ namespace To_do_List_Application
                     tasksList.RemoveAt(finalTaskNum);
 
                     Console.WriteLine("task removed succesfully");
-                    
-                    
+
+
                 }
-                else if(option == "3")
+                else if (option == "3")
                 {
                     Console.WriteLine("Here is the list of tasks");
-                    for(int i = 0;i < tasksList.Count; i++)
+                    for (int i = 0; i < tasksList.Count; i++)
                     {
-                        Console.WriteLine($"{i+1} : {tasksList[i]}");
+                        Console.WriteLine($"{i + 1} : {tasksList[i]}");
                     }
                 }
-                else if(option == "e")
+                else if (option == "e")
                 {
                     Console.WriteLine("thank you for using the program");
                     Console.WriteLine("exiting program");
@@ -62,8 +62,9 @@ namespace To_do_List_Application
                 {
                     Console.WriteLine("invalid input");
                 }
-               
+
 
             }
         }
-}   }
+    }
+}
